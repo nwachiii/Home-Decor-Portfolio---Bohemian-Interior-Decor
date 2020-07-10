@@ -306,31 +306,36 @@ p {
 .abt-card {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: flex-start;
 	padding: 2rem 5rem;
 	background-color: #364858;
 	border-radius: 30px;
+	height: 632px;
 }
 
 .abt-card h2 {
 	color: #FFFFFF;
+	text-align: left;
 }
 
 .abt-card h3 {
 	text-transform: uppercase;
 	color: #FAC99B;
-	margin: 1em 0;
+	margin-top: 1em;
 }
 
 .abt-card h5 {
 	font-weight: 200;
+	font-size: 24px;
 	color: #FFFFFF;
 	text-align: left;
-	margin: 1em 0;
+	margin-top: -1em;
 }
 
 .knw_more-btn {
+	font-size: 24px;
+	font-weight: 600;
 	color: #364858;
 	background-color: #FAC99B;
 	border-radius: 20px;
@@ -348,6 +353,7 @@ p {
 
 
 .serv-card {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -356,7 +362,7 @@ p {
 	border-radius: 25px;
 	margin-top: 4em;
 	margin-bottom: 3em;
-	position: relative;
+	height: 282px;
 }
 .odd-positn {
 	display: flex;
@@ -370,14 +376,19 @@ p {
 	margin-left: auto;
 }
 
-.serv-card h4 {
+.serv-card h3 {
+	font-weight: 600;
+	font-size: 38px;
 	color: #FAC99B;
 	text-align: center !important;
 }
 
 .serv-card p {
+	font-weight: 200;
+	font-size: 24px;
 	color: #FFFFFF;
 	text-align: left;
+	margin-top: 1em;
 }
 
 .serv-img1, .serv-img2, .serv-img3 {
@@ -566,7 +577,7 @@ p {
 
 .team-img_title h4 {
 	margin-top: 3px;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 36px;
 	line-height: 44px;
 	color: #FAC99B;
