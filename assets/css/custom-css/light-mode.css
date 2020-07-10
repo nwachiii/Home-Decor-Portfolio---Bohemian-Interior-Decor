@@ -211,7 +211,6 @@ a:hover {
 
 .abt-wrap, 
 .serv-wrap, 
-.team-wrap, 
 .portfolio-wrap, 
 .contact-wrap {
 	display: flex;
@@ -310,7 +309,6 @@ p {
 	justify-content: space-between;
 	align-items: flex-start;
 	padding: 2rem 5rem;
-	height: 282px;
 	background-color: #364858;
 	border-radius: 30px;
 }
@@ -339,12 +337,11 @@ p {
 	border-style: none;
 	width: 289px;
 	height: 64px;
-	margin-top: 2em;
 }
 
 .knw_more-btn:hover {
 	color: #FAC99B;
-	background-color: #364858;
+	background-color: #FFFFFF;
 }
 
 /*----------------services styling---------------------*/
@@ -514,22 +511,72 @@ p {
 	line-height: 44px;
 }
 /*----------------team-section styling---------------------*/
+ 
+.team-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 90%;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .team-cards {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	flex-wrap: wrap;
 	padding: 20px;
 }
 
 .card1 {
+	position: relative;
 	width: 474px;
 	height: 695px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	justify-content: flex-start;
 }
 
 .card2 {
+	position: relative;
 	width: 474px;
 	height: 695px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+
+
+.team-img {
+	max-width: 100%;
+}
+
+.team-img_title {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	width: 474px;
+	height: 162px;
+	transform: translate(-50%, -100%);
+	background-color: #364858;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.team-img_title h4 {
+	margin-top: 3px;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 44px;
+	color: #FAC99B;
+}
+
+.team-img_title p {
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 29px;
+	color: #FFFFFF;
 }
 
 /*----------------tes-section styling---------------------*/
@@ -589,5 +636,9 @@ p {
 
   .port-images {
   	display: block;
+  }
+
+  .team-cards {
+	flex-direction: column;
   }
 }
