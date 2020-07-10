@@ -7,7 +7,7 @@
 body{
 	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: normal;
 	margin: 0;
 	background-color: #FFFFFF;
 }
@@ -25,8 +25,9 @@ body{
 	justify-content: space-between;
 	max-width: 90%;
 	margin: auto;
+	height: 100px;
 	background: #FFFFFF;
-	border-bottom-left-radius: 200px;
+	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 10px;
 }
 
@@ -60,6 +61,7 @@ body{
 }
 
  a {
+ 	font-weight: 600;
 	font-size: 24px;
 	line-height: 29px;
 	color: #364858;
@@ -111,6 +113,7 @@ a:hover {
 }
 
 .header-banner h1 {
+	font-weight: 600;
 	font-size: 63px;
 	line-height: 78px;
 	text-transform: uppercase;
@@ -118,6 +121,7 @@ a:hover {
 }
 
 .header-banner h3 {
+	font-weight: 600;
 	font-size: 36px;
 	line-height: 44px;
 	margin-top: 1em;
@@ -200,6 +204,7 @@ a:hover {
 .footer {
 	position: relative;
 	margin-top: 6em;
+	margin-bottom: 2em;
 	max-width: 100%;
 	text-align: center;
 }
@@ -219,10 +224,10 @@ a:hover {
 }
 
 .section-title {
-	color: #364858;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin-bottom: 3em;
 }
 
 .section-title .dot {
@@ -231,6 +236,16 @@ a:hover {
 	margin: 0 10px;
 	height: 10px;
 	width: 10px; 
+}
+
+.section-title h2 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 59px;
+	text-transform: uppercase;
+	color: #364858;
 }
 
 .hr-left {
@@ -247,6 +262,13 @@ a:hover {
 	order: 4;
 	align-self: flex-end;
 	height: 2px;
+}
+
+p {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 200;
+
 }
 
 /*----------------about styling---------------------*/
@@ -285,10 +307,10 @@ a:hover {
 .abt-card {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-content: center;
+	justify-content: space-between;
 	align-items: flex-start;
 	padding: 2rem 5rem;
+	height: 282px;
 	background-color: #364858;
 	border-radius: 30px;
 }
@@ -300,11 +322,14 @@ a:hover {
 .abt-card h3 {
 	text-transform: uppercase;
 	color: #FAC99B;
+	margin: 1em 0;
 }
 
 .abt-card h5 {
+	font-weight: 200;
 	color: #FFFFFF;
 	text-align: left;
+	margin: 1em 0;
 }
 
 .knw_more-btn {
@@ -333,7 +358,7 @@ a:hover {
 	background-color: #364858;
 	border-radius: 25px;
 	margin-top: 4em;
-	margin-bottom: 1em;
+	margin-bottom: 3em;
 	position: relative;
 }
 .odd-positn {
@@ -372,11 +397,10 @@ a:hover {
 	grid-template-rows: repeat(27, 1fr);
 	grid-column-gap: 0;
 	grid-auto-rows: minmax(2080px, auto);
-	grid-auto-columns: minmax(auto, 82%);
+	grid-auto-columns: minmax(auto, 1155px);
 	padding: 2rem 5rem;
 	margin-bottom: 3em;
 	align-items: stretch;
-	justify-content: center;
 }
 
 .port-img1 {
@@ -433,14 +457,14 @@ a:hover {
 .view_more-btn {
 	grid-column: 1/2; 
 	grid-row: 26/28;
-	color: #FAC99B;
+	color: #FFFFFF;
+	font-size: 24px;
+	line-height: 29px;
 	background-color: #364858;
 	border-radius: 20px;
 	border-style: none;
-	max-width: 80%;
+	width: 275px;
 	height: 64px;
-	align-self: flex-end;
-	padding: 5px;
 }
 
 .view_more-btn:hover {
@@ -448,8 +472,65 @@ a:hover {
 	background-color: #FAC99B;
 }
 
-/*----------------team-section styling---------------------*/
+.port-foot {
+	position: relative;
+	height: 269px;
+	max-width: 100%;
+}
 
+.port-foot-img {
+   background: linear-gradient(0deg, rgba(54, 72, 88, 0.7), rgba(54, 72, 88, 0.7));
+	max-width: 100%;
+}
+
+.port-foot-content {
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-40%, -50%);
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+}
+
+.port-foot-items {
+	margin-right: 3rem;
+}
+
+.port-foot-content h4 {
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: 600;
+	font-size: 72px;
+	line-height: 88px;
+	color: #FFFFFF;
+}
+
+.port-foot-content p {
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 44px;
+}
+/*----------------team-section styling---------------------*/
+.team-cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.card1 {
+	width: 474px;
+	height: 695px;
+}
+
+.card2 {
+	width: 474px;
+	height: 695px;
+}
 
 /*----------------tes-section styling---------------------*/
  
